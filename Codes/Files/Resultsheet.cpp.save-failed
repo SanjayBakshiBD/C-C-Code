@@ -1,0 +1,54 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct student
+{
+    string name;
+    int num;
+};
+int main()
+{
+
+    vector<struct student> stu;
+    fstream file;
+    file.open("marks.txt");
+    int i, tmpname, tmpnum;
+
+    if(file)
+    {
+        printf("Input Found\n");
+        while((file >> tmpname >> tmpnum)
+        {
+            //stu.push_back({tmpname , tmpnum});
+            cout<< tmpname << " " << tmpnum << endl;
+        }
+        file.clear();
+        for(i=0; i<stu.size(); i++)
+        {
+            cout << stu[i].name <<" " << stu[i].num << endl;
+        }
+        //file.seekg(0, ios::beg); // go back to point 0
+
+        /*sort(number.begin(), number.end(), greater<int>());
+        /*for(i=0; i<number.size(); i++)
+        {
+
+            cout << number[i]<< " " ;
+        }
+
+        cout << endl;
+        printf("Output file found\n");
+
+        for(i=0; i<number.size(); i++)
+        {
+            file << number[i] << endl;
+        }*/
+
+        file.close();
+
+    }
+
+
+    return 0;
+}
+
+

@@ -1,0 +1,12 @@
+student5 29
+
+student2 25
+
+student3 23
+
+student4 21
+
+student6 15
+
+student1 14
+
